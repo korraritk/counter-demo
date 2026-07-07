@@ -1,0 +1,18 @@
+<div class="wrap">
+  <div class="buttons">
+    <button class="btn green" (click)="click('count')">
+      <div class="sym">+</div>
+      <div class="lbl">Count</div>
+    </button>
+    <button class="btn red" (click)="click('discount')">
+      <div class="sym">−</div>
+      <div class="lbl">Discount</div>
+    </button>
+  </div>
+
+  <p class="msg">Button was clicked {{ count() }} times</p>
+
+  @if (error()) {
+    <div class="err">{{ error() }}</div>
+  }
+</div>
