@@ -10,7 +10,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
   // Backend API (รันใน Docker ที่ port 8080)
-  apiBase = 'https://counter-demo-3eyq.onrender.com';
+  apiBase = 'https://counter-demo-3eyq.onrender.com/api';
   count = signal(0);
   error = signal<string | null>(null);
 
